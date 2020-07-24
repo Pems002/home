@@ -25,7 +25,8 @@
             <p>
                 暂时没有对未来有规划，准高三学生即将迎来2021届高考<br>非常坐立难安自己的懒癌应该怎么救😭——20/07/24
             </p>
-            <p>2021年的目标 ▶ 集美大学/厦门理工学院 倒计时：<a class="count"></a></p>
+            <p>2021年的目标 ▶ 集美大学/厦门理工学院</p>
+			<p>倒计时：</p><p class="count"></p>
             <p>我的其他站点: <a href="https://blog.imsean.cn" target="_blank" rel="noopener">Blog站</a> <a href="https://home.imsean.cn" target="_blank" rel="noopener">Notion页</a></p>
             <p>社交媒体: <a href="https://weibo.com/u/3225834177" target="_blank" rel="noopener">Weibo</a> <a href="https://www.instagram.com/pems002" target="_blank" rel="noopener">instagram</a></p>
             <p>
@@ -56,7 +57,7 @@
             h = addZero(h);
             m = addZero(m);
             s = addZero(s);
-            document.querySelector(".count").innerHTML = `${d}天 ${h}时 ${m}分 ${s}秒`;
+            document.querySelector(".count").innerHTML = `${d}天 ${h}小时 ${m}分 ${s}秒`;
             if (lefttime <= 0) {
                 document.querySelector(".count").innerHTML = "已结束";
                 return;
