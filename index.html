@@ -18,53 +18,48 @@
     <main>
         <div>
             <h1>👋 Hi There!</h1>
-            <h3>我是Sean (ID:pems002/神奇的Sean)</h3>
-            <p>一只来自西北不知名5线小城市的高中学生。</p>
-            <p>年龄接近成人，是个好人✅</p>
+            <h4>我是Sean (ID:pems002/神奇的Sean)</h4>
+            <p>一只来自西北不知名5线小城市的高中学生。<br>年龄接近成人，是个好人✅</p>
             <p>🐠暂时是一只没有梦想的咸鱼<br>📷爱好科技数码类产品<br>🤩非资深但手机相册里却全是食物的吃货种子选手</p>
-            <p>性格算是很奇怪的那种，脾气一般，暂时还没有找清楚自己的定位，还在摸索中……现实生活中可以说是那种情商很低的人吧，比较在意他人对自己的评价、看法之类的……</p>
-            <p>爱好很广泛，怎么说呢，暂时还没有什么很让我厌恶的东西，最多无感，但没有到厌恶那个层次。</p>
+            <p>性格算是很奇怪的那种，脾气一般，现实生活中可以说是那种情商很低的人吧，比较在意他人对自己的评价、看法…</p>
+            <p>爱好很广泛，什么都爱，也没有什么厌恶的。</p>
             <p>
-                目前是一名高三学生，并且即将迎来2021届高考。目前高考可以说还是一个比较让我担心的问题😔
-            </p>
-            <p>期望的小目标 ▶ 集美大学/厦门理工学院</p>
-            <p> </p>
+				目前是一名高三学生，并且即将迎来2021届高考。<br>目前高考还是一个让我担心的问题😔<br>期望的小目标 ▶ <a href="https://www.xmut.edu.cn" target="_blank" rel="noopener">集美大学</a>/<a href="https://www.xmut.edu.cn" target="_blank" rel="noopener">厦门理工学院</a></p>
 			<p class="count"></p>
-            <p>其他站点: <a href="https://blog.imsean.cn" target="_blank" rel="noopener">Blog</a></p>
-            <p>社交媒体: <a href="https://weibo.com/u/3225834177" target="_blank" rel="noopener">Weibo</a> <a href="https://www.instagram.com/pems002" target="_blank" rel="noopener">instagram</a></p>
+            <p>其他站点: <a href="https://blog.imsean.cn" target="_blank" rel="noopener">Blog</a><br>社交媒体: <a href="https://weibo.com/u/3225834177" target="_blank" rel="noopener">Weibo</a> <a href="https://www.instagram.com/pems002" target="_blank" rel="noopener">instagram</a></p>
             <p>  </p>
         </div>
     </main>
     <footer class="container">
-        <div>2020 © <a href="https://www.imsean.cn" rel="noopener">神奇的Sean</a></div>
+        <div>© 2020 <a href="https://www.imsean.cn" rel="noopener">神奇的Sean</a></div>
 		<div><a>中文</a> • <a href="https://www.imsean.cn/en.html" rel="noopener">ENG</a></div>
     </footer>
 </body>
 <script>
     window.onload = function () {
         countDown();
-        funcition addZero(i) {
+        function addZero(i) {
             return i < 10 ? "0" + i: i + "";
         }
         function countDown() {
             var nowtime = new Date();
             var endtime = new Date("2021/06/07,00:00:00");
             var lefttime = parseInt((endtime.getTime() - nowtime.getTime()) / 1000);
-            var d = parseInt(lefttime / (24*60*60));
-            var h = parseInt(lefttime / (60 * 60) % 24)
+            var d = parseInt(lefttime / (24*60*60))
+            var h = parseInt(lefttime / (60 * 60) % 24);
             var m = parseInt(lefttime / 60 % 60);
             var s = parseInt(lefttime % 60);
-            d = addZero(d);
-            h = addZero(h)
+            d = addZero(d)
+            h = addZero(h);
             m = addZero(m);
             s = addZero(s);
-            document.querySelector(".count").innerHTML = `距离高考剩余：${d}天 ${h}小时 ${m}分 ${s}秒`;
+            document.querySelector(".count").innerHTML = `距离高考还有: ${d}天 ${h}小时 ${m}分 ${s}秒`;
             if (lefttime <= 0) {
-                document.querySelector(".count").innerHTML = "已结束";
+                document.querySelector(".count").innerHTML = "倒计时已结束";
                 return;
             }
             setTimeout(countDown, 1000);
-            }
-    }
-</script>
+          }
+      }
+  </script>
 </html>
