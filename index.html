@@ -28,6 +28,7 @@
                 目前是一名高三学生，并且即将迎来2021届高考。目前高考可以说还是一个比较让我担心的问题😔
             </p>
             <p>期望的小目标 ▶ 集美大学/厦门理工学院</p>
+            <p> </p>
 			<p class="count"></p>
             <p>其他站点: <a href="https://blog.imsean.cn" target="_blank" rel="noopener">Blog</a></p>
             <p>社交媒体: <a href="https://weibo.com/u/3225834177" target="_blank" rel="noopener">Weibo</a> <a href="https://www.instagram.com/pems002" target="_blank" rel="noopener">instagram</a></p>
@@ -50,19 +51,20 @@
             var endtime = new Date("2021/06/07,00:00:00");
             var lefttime = parseInt((endtime.getTime() - nowtime.getTime()) / 1000);
             var d = parseInt(lefttime / (24*60*60));
-            var h = parseInt(lefttime / (60 * 60) % 24);
+            var h = parseInt(lefttime / (60 * 60) % 24)
             var m = parseInt(lefttime / 60 % 60);
             var s = parseInt(lefttime % 60);
             d = addZero(d);
-            h = addZero(h);
+            h = addZero(h)
             m = addZero(m);
             s = addZero(s);
             document.querySelector(".count").innerHTML = `距离高考剩余：${d}天 ${h}小时 ${m}分 ${s}秒`;
-            if (lefttime <= 0)
+            if (lefttime <= 0) {
                 document.querySelector(".count").innerHTML = "已结束";
                 return;
             }
             setTimeout(countDown, 1000);
-        }
+            }
+    }
 </script>
 </html>
