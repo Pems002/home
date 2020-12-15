@@ -1,5 +1,7 @@
 #我的个人主页
 
-我部署在Coding的个人主页
-源代码Clone自Github
-<link>https://github.com/dmego/home.github.io
+依托Coding Pages所搭建的个人主页
+源代码Copyright by alandecode
+
+<link>https://www.imsean.cn
+
