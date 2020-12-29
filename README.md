@@ -1,6 +1,4 @@
-#我的个人主页
+# Home Page
 
-依托Coding Pages所搭建的个人主页
-
-主页：<link>https://www.imsean.cn
+<link>https://www.imsean.cn
 
