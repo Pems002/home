@@ -1,0 +1,52 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color: #fff;
+    color: #000;
+    font-family: helvetica, arial, sans-serif;
+    font-size: 3.5ex;
+    line-height: 1.5;
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #161f2f;
+    color: #fff;
+ }
+}
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.emoji {
+  font-size: 0em;
+  text-align: center;
+}
+.title {
+  font-size: 4em;
+  text-align: center;
+  line-height: 0em;
+  color: #000;
+}
+@media (prefers-color-scheme: dark) {
+  .title {
+  font-size: 4em;
+  text-align: center;
+  line-height: 0em;
+  color: #fff;
+ }
+}
+.text {
+  text-align: center;
+}
+.button {
+position: absolute;
+top: auto;
+left: 120px;
+vertical-align: top;
+white-space: nowrap;
+color: #ffffff;
+align-items: center;
+}
