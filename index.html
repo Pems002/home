@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-    <head>
+  <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Sean is here! - Hi there!</title>
         <meta name="description" content="Sean's HomePage">
@@ -9,19 +9,21 @@
         <meta name="author" content="Sean">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <link href="./assets/css/style.css" rel="stylesheet">
-		<meta name="renderer" content="webkit">
-		<meta name="force-rendering" content="webkit">
-		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-		<meta name="HandheldFriendly" content="True" >
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/pems002/Main@master/favicon/favicon.ico">
+	<meta name="renderer" content="webkit">
+	<meta name="force-rendering" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta name="HandheldFriendly" content="True" >
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/pems002/Main@master/favicon/favicon.ico">
         <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/pems002/Main@master/favicon/favicon-16.png">
         <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/pems002/Main@master/favicon/favicon-32.png">
-		<link rel="icon" type="image/png" sizes="64x64" href="https://cdn.jsdelivr.net/gh/pems002/Main@master/favicon/favicon-64.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="https://cdn.jsdelivr.net/gh/pems002/Main@master/favicon/favicon-64.png">
         <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/pems002/Main@master/favicon/apple-touch-icon.png">
         <link rel="apple-touch-icon-precomposyoued" href="https://cdn.jsdelivr.net/gh/pems002/Main@master/favicon/apple-touch-icon.png" />
-    </head>
-<body>
+        <script src="https://cdn.jsdelivr.net/gh/pems002/home@master/assets/js/Count.js" type="text/javascript"></script>
+        <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "11099b195d9a45c88013e37950455a42"}'></script>
+  </head>
+  <body>
     <main>
         <div>
             <h1>👋 Hi There!</h1>
@@ -40,35 +42,5 @@
     <footer class="container">
         <div>© 2021 <a href="https://www.imsean.cn" rel="noopener">神奇的Sean</a></div>
     </footer>
-</body>
-<script>
-    window.onload = function () {
-        countDown();
-        function addZero(i) {
-            return i < 10 ? "0" + i: i + "";
-        }
-        function countDown() {
-            var nowtime = new Date();
-            var endtime = new Date("2021/06/07,00:00:00");
-            var lefttime = parseInt((endtime.getTime() - nowtime.getTime()) / 1000);
-            var d = parseInt(lefttime / (24*60*60))
-            var h = parseInt(lefttime / (60 * 60) % 24);
-            var m = parseInt(lefttime / 60 % 60);
-            var s = parseInt(lefttime % 60);
-            d = addZero(d)
-            h = addZero(h);
-            m = addZero(m);
-            s = addZero(s);
-            document.querySelector(".count").innerHTML = `距离高考还有: ${d}天 ${h}小时 ${m}分 ${s}秒`;
-            if (lefttime <= 0) {
-                document.querySelector(".count").innerHTML = "倒计时已结束";
-                return;
-            }
-            setTimeout(countDown, 1000);
-          }
-      }
-  </script>
-<!-- Cloudflare Web Analytics -->
-<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "11099b195d9a45c88013e37950455a42"}'></script>
-<!-- End Cloudflare Web Analytics -->
+  </body>
 </html>
