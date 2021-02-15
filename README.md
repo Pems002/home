@@ -2,7 +2,7 @@
 
 简洁风个人介绍页（主页）
 
-[Demo](https://www.insean.cn)
+[Demo](https://www.imsean.cn)
 
 ### At first
 
